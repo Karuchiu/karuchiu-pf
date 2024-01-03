@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -9,30 +9,40 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
+      href: "https://github.com/Karuchiu",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "https://github.com/theyashpatel",
+      href: "mailto:karuchiu8@gmail.com",
     },
     {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          Twitter <FaTwitter size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "https://twitter.com/karuchiu_",
+      style: "rounded-tr-md",
     },
+    /* {
+      id: 5,
+      child: (
+        <>
+          LinkedIn <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/karuchiu-wamahiga-922ba4274/",
+      style: "rounded-tr-md",
+    }, */
     {
       id: 4,
       child: (
@@ -40,10 +50,10 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/karuchiuResume.pdf",
       style: "rounded-br-md",
       download: true,
-    },
+    }
   ];
 
   return (
